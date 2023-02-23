@@ -7,6 +7,7 @@ const windowHeight = Dimensions.get("window").height;
 
 
 const renderItem = ({ item, index }) => (
+  //console.log(item)
   <Song
     id={index + 1}
     image={item.imageURL}
@@ -15,6 +16,7 @@ const renderItem = ({ item, index }) => (
     artist={item.songArtists[0].name}
     duration={item.duration}
   />
+  
 );
 
 const SongList = ({tracks}) => {

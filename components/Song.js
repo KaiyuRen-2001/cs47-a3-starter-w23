@@ -11,7 +11,7 @@ export default function Song({ id, imageURL, title, album, artist, duration }) {
         <Text style={styles.text}>{id}</Text>
       </View>
       <View style={styles.imageView}>
-        <Image style={styles.image} source={{ uri: imageURL }}></Image>
+        <Image style={styles.image} source={{ uri: "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72" }}></Image>
       </View>
       <View style={styles.titleView}>
         <Text numberOfLines={1} style={styles.text}>
@@ -70,17 +70,20 @@ const styles = StyleSheet.create({
     width: "10%",
   },
   imageView: {
-    flexDirection: "column",
+    // flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     width: "20%",
+    height: 40,
+    //backgroundColor: "red",
   },
   text: {
     color: Themes.colors.white,
   },
   image: {
     resizeMode: "contain",
-    width: windowWidth * 0.15,
-    height: windowWidth * 0.15,
+   
+    width: "100%" ,
+    height: "100%",
   },
 });
