@@ -4,14 +4,14 @@ import { millisToMinutesAndSeconds } from "../utils";
 
 const windowWidth = Dimensions.get("window").width;
 
-export default function Song({ id, imageURL, title, album, artist, duration }) {
+export default function Song({ id, image, title, album, artist, duration }) {
   return (
     <View style={styles.windowView}>
       <View style={styles.indexView}>
         <Text style={styles.text}>{id}</Text>
       </View>
       <View style={styles.imageView}>
-        <Image style={styles.image} source={{ uri: "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72" }}></Image>
+        <Image style={styles.image} source={{ uri: image}}></Image>
       </View>
       <View style={styles.titleView}>
         <Text numberOfLines={1} style={styles.text}>

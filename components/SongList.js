@@ -10,7 +10,7 @@ const renderItem = ({ item, index }) => (
   //console.log(item)
   <Song
     id={index + 1}
-    image={item.imageURL}
+    image={item.imageUrl}
     title={item.songTitle}
     album={item.albumName}
     artist={item.songArtists[0].name}
